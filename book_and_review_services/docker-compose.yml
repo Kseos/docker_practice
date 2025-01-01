@@ -1,0 +1,12 @@
+services:
+  book_service:
+    build:
+      context: ./book_service
+    ports:
+      - "5000:5000"
+
+  review_service:
+    build:
+      context: ./review_service
+    ports:
+      - "5001:5001"
